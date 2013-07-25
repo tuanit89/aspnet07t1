@@ -32,6 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ASPSnippets.FaceBookAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ASPSnippets.FaceBookAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="FacebookAPI, Version=1.0.4332.19837, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\FacebookAPI.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -125,6 +133,10 @@
     <Content Include="DetailDep.aspx" />
     <Content Include="DetailPhoto.aspx" />
     <Content Include="detailvote.aspx" />
+    <Content Include="dll\ASPSnippets.FaceBookAPI.dll" />
+    <Content Include="dll\facebook.dll" />
+    <Content Include="dll\FacebookAPI.dll" />
+    <Content Include="dll\FacebookClient.dll" />
     <Content Include="Global.asax" />
     <Content Include="HTMLPage.htm" />
     <Content Include="images\Comment_B-512.png" />
@@ -199,86 +211,112 @@
   <ItemGroup>
     <Compile Include="admin.aspx.cs">
       <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AdminPage.master.cs">
       <DependentUpon>AdminPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Content Include="App_Code\Connection.cs" />
     <Content Include="App_Code\DataAccess.cs" />
     <Content Include="App_Code\EmployeeWebService.cs" />
     <Compile Include="camxuc.aspx.cs">
       <DependentUpon>camxuc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="CS.aspx.cs">
       <DependentUpon>CS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default2.aspx.cs">
       <DependentUpon>Default2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DefaultPage.master.cs">
       <DependentUpon>DefaultPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="dep.aspx.cs">
       <DependentUpon>dep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DetailDep.aspx.cs">
       <DependentUpon>DetailDep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DetailPhoto.aspx.cs">
       <DependentUpon>DetailPhoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="detailvote.aspx.cs">
       <DependentUpon>detailvote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Hot.master.cs">
       <DependentUpon>Hot.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="loginAdmin.aspx.cs">
       <DependentUpon>loginAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MasterUpload.master.cs">
       <DependentUpon>MasterUpload.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MasterUser.master.cs">
       <DependentUpon>MasterUser.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="messenger.aspx.cs">
       <DependentUpon>messenger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="old.aspx.cs">
       <DependentUpon>old.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="photoupload.aspx.cs">
       <DependentUpon>photoupload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="profile.aspx.cs">
       <DependentUpon>profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.master.cs">
       <DependentUpon>Site1.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Thoat.aspx.cs">
       <DependentUpon>Thoat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="timkiemnc.aspx.cs">
       <DependentUpon>timkiemnc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="upload.aspx.cs">
       <DependentUpon>upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="vote.aspx.cs">
       <DependentUpon>vote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Website\Properties\AssemblyInfo.cs" />
     <Compile Include="xastress.aspx.cs">
       <DependentUpon>xastress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -291,6 +329,8 @@
     <Content Include="MasterUpload.master" />
     <Content Include="MasterUser.master" />
     <Content Include="Site1.master" />
+    <None Include="dll\ASPSnippets.FaceBookAPI.dll.refresh" />
+    <None Include="dll\FacebookAPI.dll.refresh" />
     <None Include="Website\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="Website\Web.config" />
     <Content Include="Website\Web.Debug.config">

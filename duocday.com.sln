@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "Website\Website.csproj", "{33FF7235-02AF-466A-A836-B365F2559FA3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{958F8F16-0D7A-409F-8FE9-30FF0A91124D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{33FF7235-02AF-466A-A836-B365F2559FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33FF7235-02AF-466A-A836-B365F2559FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33FF7235-02AF-466A-A836-B365F2559FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{958F8F16-0D7A-409F-8FE9-30FF0A91124D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{958F8F16-0D7A-409F-8FE9-30FF0A91124D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{958F8F16-0D7A-409F-8FE9-30FF0A91124D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{958F8F16-0D7A-409F-8FE9-30FF0A91124D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

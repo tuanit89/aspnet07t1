@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site1.master" AutoEventWireup="true" CodeFile="Hot.master.cs" Inherits="Hot" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+ </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+<%--<div>
+        <a class="buttons spaceBottom" href="upload.html" style="float: left; width: 278px;color: white">Click Ä‘á»ƒ báº¯t Ä‘áº§u chia sáº» nhá»¯ng bá»©c áº£nh vui!</a>
+        <div class="clear">
+        </div>
+    </div>--%>
+    <div class="box darkBox socialBox">
+    <h3>
+        Ủng hộ duocday bạn nhé ^^</h3>
+    <div class="media facebook">
+        <div class="fb-like" data-href=" http://www.facebook.com/duocdaydotcom" data-send="false"
+            data-width="270" data-show-faces="false">
+        </div>
+    </div>
+    <div class="media twitter">
+        <a href="https://twitter.com/" class="twitter-follow-button" data-show-count="true"
+            data-size="large">Follow duocday</a>
+        <script type="text/javascript">
+            !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } } (document, "script", "twitter-wjs");
+        </script>
+    </div>
+    <div class="media google" style="border-bottom: none">
+        <div class="g-plusone" data-href="http://www.duocday.com/">
+        </div>
+        <script type="text/javascript">
+            (function () {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/plusone.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
+        </script>
+    </div>
+    
+</div>
+
+    <div class="fixedScrollDetector">
+    </div>
+    <div class="fixedScroll">
+        
+		<div style="float:left;width:300px;height:400px;background-color:Black;">
+        
+        </div>
+		<%--<div class="spaceBottom">
+			<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<ins class="adsbygoogle"
+				 style="display:inline-block;width:300px;height:250px"
+				 data-ad-client="ca-pub-1704544291315733"
+				 data-ad-slot="6344095409"></ins>
+			<script>
+			    (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+		<div class="spaceBottom">
+			<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<ins class="adsbygoogle"
+				 style="display:inline-block;width:300px;height:250px"
+				 data-ad-client="ca-pub-1704544291315733"
+				 data-ad-slot="7820828609"></ins>
+			<script>
+			    (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>--%>
+		<!-- haivl-trang-chu-bottom-small -->
+		<div id='div-gpt-ad-1366006398362-0' style='width:300px; height:90px;display: none'>
+			<script type='text/javascript'>
+			    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1366006398362-0'); });
+			</script>
+		</div>
+       
+    </div>
+</asp:Content>
+
+

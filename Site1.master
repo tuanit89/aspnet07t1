@@ -1,0 +1,172 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site1.master.cs" Inherits="Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="content-language" content="vi" />
+    <title>Ảnh vui </title>
+    <script src="Scripts/jquery-1.6.2.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/duocday.css" type="text/css" />
+    <script src="Scripts/duocday.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.cookie.js" type="text/javascript"></script>
+    <script src="Scripts/FB.Share.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+        var i = 0;
+        var iddata;
+        function fbLogout(id) {
+            if (i == 1) {
+                alert("lan2");
+                document.getElementById(id).style.backgroundColor = '#F4F4F4';
+                i = 0;
+            }
+            else {
+                alert("lan1");
+                document.getElementById(id).style.backgroundColor = 'red';
+                iddata = id;
+            }
+
+        }
+    </script>
+    <script language="javascript" type="text/javascript">
+        var i = 0;
+        function updatehay(id) {
+
+            $.ajax({
+                type: "POST",
+                url: "MultipleUpdateWebService.asmx/updatehay",
+                data: "{'id':'" + id + "'}",
+                contentType: "application/json",
+                async: false,
+                success: function (data) {
+
+                    document.getElementById("hay" + id).style.backgroundColor = data.d;
+                    document.getElementById("chan" + id).style.backgroundColor = '#F4F4F4';
+                },
+                error: function () {
+                    alert("Some error occured!");
+
+                }
+            });
+
+        }
+    </script>
+    <script language="javascript" type="text/javascript">
+        var i = 0;
+        function updatechan(id) {
+
+            $.ajax({
+                type: "POST",
+                url: "MultipleUpdateWebService.asmx/updatechan",
+                data: "{'id':'" + id + "'}",
+                contentType: "application/json",
+                async: false,
+                success: function (data) {
+
+                    document.getElementById("chan" + id).style.backgroundColor = data.d;
+                    document.getElementById("hay" + id).style.backgroundColor = '#F4F4F4';
+                },
+                error: function () {
+                    alert("Some error occured!");
+
+                }
+            });
+
+        }
+    </script>
+    <div id="fb-root">
+    </div>
+    <script>        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/vi_VN/all.js#xfbml=1&appId=161745784005995";
+            fjs.parentNode.insertBefore(js, fjs);
+        } (document, 'script', 'facebook-jssdk'));</script>
+    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=YOUR-PROFILE-ID"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="content">
+        <div id="mainContainer">
+            <div id="header">
+                <div id="headerContent">
+                    <a href="/" id="logo">duocday</a>
+                    <ul id="menuBar">
+                        <%--<li class="selected"><a href="default.aspx">Hot</a></li>
+                        <li><a href="dep.aspx">Đẹp +</a></li>
+                        <li><a href="xastress.aspx">Xả Stress</a></li>
+                        <li><a href="camxuc.aspx">Cảm xúc</a></li>
+                        <li><a href="old.aspx">Cũ</a></li>
+                        <li><a href="vote.aspx">Bình chọn</a></li>
+                        <li><a href="timkiemnc.aspx" target="_blank">Tìm kiếm nâng cao</a></li>--%>
+                        <asp:Literal ID="Literal2" runat="server"></asp:Literal>
+                    </ul>
+                    <div id="loginPanel">
+                        <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+                    </div>
+                    <div id="upanh">
+                        <a class="upload" href="upload.aspx">Đăng ảnh</a>
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+            </div>
+            <div style="float: left; width: 985px; margin-bottom: 5px;">
+                <div id="thongdiep">
+                   <marquee direction="left"><b ><asp:Literal ID="Literal4" runat="server"></asp:Literal></b></marquee>
+                </div>
+                <div id="timkiem">
+                    <asp:TextBox ID="TextBox1" runat="server" Width="295px" Height="33px"></asp:TextBox>
+                </div>
+            </div>
+            
+                    
+            <div id="leftColumn">
+            <asp:Literal ID="Literal3" runat="server"></asp:Literal>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <div id="footer">
+                    <%--<ul class="left">
+                        <li>© 2013 <a href="#" target="_blank">Appvl</a></li>
+                    </ul>--%>
+                    <ul class="right">
+                        <li><a href="#">Liên hệ</a> </li>
+                        <li>·<a href="#">Giới thiệu</a> </li>
+                        <li>·<a href="#">FAQ</a> </li>
+                        <li>·<a href="#">Điều khoản</a> </li>
+                        <li>·<a href="#">Cách vào Facebook</a> </li>
+                        <li>·<a href="#" target="_blank">RSS</a> </li>
+                        <li>·<a href=" http://www.facebook.com/duocdaydotcom" target="_blank">Facebook</a>
+                        </li>
+                    </ul>
+                    <div class="clear">
+                    </div>
+                </div>
+            </div>
+            <div id="rightColumn">
+                <div class="" id="rightscrl">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+    </div>
+    </form>
+    <script type="text/javascript">
+        duocday.Facebook.init("560041050701551");
+    </script>
+    <script type="text/javascript">
+        duocday.ListPhoto.init("new", 1);
+    </script>
+    <script type="text/javascript">
+        duocday.Uploader.init(190570, 1);
+    </script>
+    <script type="text/javascript">
+        duocday.ListPhoto.init("vote", 1);
+    </script>
+</body>
+</html>

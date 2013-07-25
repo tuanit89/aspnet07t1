@@ -11,7 +11,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1"><meta http-equiv="content-language" content="vi" /><title>
-	Ảnh vui 
+	Thử thôi nhé
 </title>
         <script src="Scripts/jquery-1.6.2.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/duocday.css" type="text/css" />

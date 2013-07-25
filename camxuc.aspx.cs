@@ -11,7 +11,7 @@ public partial class camxuc : System.Web.UI.Page
     {
         if (!Page.IsPostBack)
         {
-            Page.Title = "Cảm xúc - nơi chia sẻ những cảm xúc trong ngày";
+            Page.Title = "Cảm xúc - nơi chia sẻ những cảm xúc trong ngày Testing";
         }
     }
 }

@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site1.master" AutoEventWireup="true" CodeFile="MasterUser.master.cs" Inherits="MasterUser" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+ </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+     
+                <div class="" id="rightscrl">
+                
+    <div class="fixedScrollDetector">
+    </div>
+    <div class="fixedScroll fixedWidth">
+        <div class="box darkBox userInfo">
+        <asp:DataList ID="dtluser" runat="server">
+            <ItemTemplate>
+            
+          
+            <div class="avatar">
+                <img src="<%#Eval("avatar") %>" alt="<%#Eval("tenHienThi") %>" />
+                <div class="name">
+                    <h2><%#Eval("tenHienThi") %></h2>
+                    <span>Tham gia từ: <%#Eval("ngayDK") %></span>
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+            <div class="stats">
+                <div>
+                    Số ảnh đã đăng: <span class="number"><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></span></div>
+                <div>
+                    Được like: <span class="number"><%#Eval("luotlike") %></span>
+                    lần</div>
+                <div>
+                    Được bình luận: <span class="number"><%#Eval("luotcommend") %></span>
+                    lần</div>
+                <div>
+                    Được xem: <span class="number">
+                        <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label></span>
+                    lần</div>
+                <div>
+                    Thứ hạng: <span class="number"><asp:Label ID="Label3" runat="server" Text="Label"></asp:Label></span></div>
+                    <div>
+                       <asp:Panel ID="Panel2" runat="server" Visible="false"> Facebook: <a rel="nofollow" target="_blank" href="http://www.facebook.com/profile.php?id=<%#Eval("idFacebook") %>"><%#Eval("tenHienThi") %></a></asp:Panel></div>
+                
+                <div class="websites">
+                    <div id="wscaption">
+                        <asp:Panel ID="Panel1" runat="server" Visible="false">
+                       
+                        Website: <a href="<%#Eval("website")%>" target="_blank"><%#Eval("website")%></a> </asp:Panel></div>
+<%--                    <div id="wslist">
+                        <ul>
+                                    <li><a rel="nofollow" target="_blank" href="http://thucdem.vn">http://thucdem.vn</a></li>
+                                    <li><a rel="nofollow" target="_blank" href="http://fb.com/phaibaymoivui">http://fb.com/phaibaymoivui</a></li>
+                        </ul>
+                    </div>--%>
+                    <div class="clear">
+                    </div>
+                </div>
+                
+                    <div class="about">
+                       <%#Eval("ghichu") %>
+                    </div>
+            </div>
+              </ItemTemplate>
+        </asp:DataList>
+        </div>
+    </div>
+   
+
+                 </div>
+            
+   
+</asp:Content>
+
+

@@ -7,13 +7,12 @@
         //window.location.href = document.getElementById('ololo').href;
         document.getElementById('duongdan').style.display = 'none';
         document.getElementById('fileanh').style.display = 'block';
-        document.getElementById('<%=txtddanh.ClientID%>').value = "";
+        
     }
     function ddanh() {
         //window.location.href = document.getElementById('ololo').href;
         document.getElementById('duongdan').style.display = 'block';
         document.getElementById('fileanh').style.display = 'none';
-        document.getElementById('<%=FileUpload1.ClientID%>').value = "";
     }
     function picture() {
         //window.location.href = document.getElementById('ololo').href;
@@ -38,29 +37,28 @@
         </p>
         <p>
                 <label for="Caption">Chuyên mục ảnh</label>
-            <asp:DropDownList ID="DropDownList1" runat="server">
-            </asp:DropDownList>
+            <dropdownlist id = "drpchuyenmuc" name="drpchuyenmuc"></dropdownlist>
              <asp:Label ID="thbaomuc" runat="server" Font-Bold="true" ForeColor="Red" Text=""></asp:Label>
             </p>
         <p>
                 
                 <a style="font-weight:bold" href="javascript:fileanh()">Upload file ảnh</a>/<a style="font-weight:bold" href="javascript:ddanh()">Đường dẫn ảnh</a>
                 <div id = "fileanh" style="display:block;">
-                <asp:FileUpload ID="FileUpload1" runat="server" />
+                <input id="file" name="file" runat="server" type="file" />
                 
                 </div>
                  <div id = "duongdan" style="display:none;">
-                <asp:TextBox class="text largeWidth" ID="txtddanh" runat="server"></asp:TextBox>
+                <input class="text" id="ddanh" name="chkhienface" runat="server" type="text" />
                 
                 </div>
-            <asp:Label ID="thbaofile" runat="server" Font-Bold="true" ForeColor="Red" Text=""></asp:Label>
-                 
+            
+                 <input id="thbaofile" name="thbaofile" runat="server" type="text" />
             </p>
             <p>
                 <label for="Caption">Tiêu đề của ảnh</label>
-               
-                 <asp:TextBox class="text largeWidth" ID="txttieudeanh" runat="server"></asp:TextBox>
-            <asp:Label ID="thbaotdeanh" runat="server" Font-Bold="true" ForeColor="Red" Text=""></asp:Label>
+               <input class="text largeWidth" id="txttieudeanh" name="txttieudeanh" runat="server" type="text" />
+               <input class="text" id="thbaotdeanh" name="thbaotdeanh" runat="server" type="text" />
+           
 
             </p>
 
@@ -71,12 +69,13 @@
             <p>
                 <label for="Source">Nguồn của ảnh</label>
                 <input class="text largeWidth" id="nguonanh" type="text" runat="server" />
-                 <asp:Label ID="thbaonguonanh" runat="server" Font-Bold="true" ForeColor="Red"></asp:Label>
+                 
+                  <input id="thbaonguonanh" name="thbaonguonanh" runat="server" type="text" />
             </p>
             <p class="buttonSet">
-                    <asp:Button ID="Button2" runat="server" Text="Đăng ảnh" Height="32" BackColor="#00A5F0" OnClick="btnanh_click" />
+                    <%--<asp:Button ID="Button2" runat="server" Text="Đăng ảnh" Height="32" BackColor="#00A5F0" OnClick="btnanh_click" />--%>
                     
-               
+               <input id="Text1" name="thbaonguonanh" runat="server" type="button" />
             </p>
         
      </div>
@@ -91,27 +90,25 @@
         </div>--%>
                 <p >
                 <label for="Caption">Chuyên mục ảnh</label>
-            <asp:DropDownList ID="DropDownList2" runat="server">
-            </asp:DropDownList>
-                <asp:Label ID="thbaomucvdeo" runat="server" Font-Bold="true" ForeColor="Red" Text=""></asp:Label>
+                <dropdownlist id="drpchuyenmuc" name="drpchuyenmuc"></dropdownlist>
             </p>
         <p >
                 <label for="YoutubeUrl">Đường dẫn đến video Youtube</label>
                 <label class="help">Copy từ thanh địa chỉ trình duyệt mà bạn đang xem Youtube</label>
                 <label class="help">Ví dụ: http://www.youtube.com/watch?v=9bZkp7q19f0</label>
                 <input class="text largeWidth" id="ddvideo"  type="text" runat="server" />
-                <asp:Label ID="thbaolink" runat="server" Font-Bold="true" ForeColor="Red" Text=""></asp:Label>
+                
             </p>
             <div id="youtubeEmbed"></div>
             <p >
                 <label for="Caption">Tiêu đề của video</label>
                 <input class="text largeWidth" id="tdevideo" name="Caption" type="text" runat="server" />
-                <asp:Label ID="thbaotdevdeo" runat="server" Font-Bold="true" ForeColor="Red" Text=""></asp:Label>
+                
             </p>
             <p class="buttonSet">
-                <%--<button class="buttons submitButton" type="submit" id="Button1">
-                    Đăng video</button>--%>
-                    <asp:Button ID="Button1" runat="server" Text="Đăng video" Height="32" BackColor="#00A5F0" OnClick="btvideo_click" />
+                <button class="buttons submitButton" type="submit" id="Button1">
+                    Đăng video</button>
+                    <%--<asp:Button ID="Button1" runat="server" Text="Đăng video" Height="32" BackColor="#00A5F0" OnClick="btvideo_click" />--%>
             </p>
      </div>
 </div>

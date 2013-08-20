@@ -122,13 +122,11 @@
     <Content Include="bin\FacebookAPI.dll" />
     <Content Include="bin\FacebookClient.dll" />
     <Content Include="camxuc.aspx" />
-    <Content Include="CS.aspx" />
     <Content Include="css\duocday.css" />
     <Content Include="css\hmclip.css" />
     <Content Include="css\styleLOGIN.css" />
     <Content Include="css\StyleSheet1.css" />
     <Content Include="Default.aspx" />
-    <Content Include="Default2.aspx" />
     <Content Include="dep.aspx" />
     <Content Include="DetailDep.aspx" />
     <Content Include="DetailPhoto.aspx" />
@@ -139,6 +137,31 @@
     <Content Include="dll\FacebookClient.dll" />
     <Content Include="Global.asax" />
     <Content Include="HTMLPage.htm" />
+    <Content Include="bin\images\Comment_B-512.png" />
+    <Content Include="bin\images\comment_icon.png" />
+    <Content Include="bin\images\delete.jpeg" />
+    <Content Include="bin\images\down_icon.png" />
+    <Content Include="bin\images\fb-login-button.png" />
+    <Content Include="bin\images\icon_web.png" />
+    <Content Include="bin\images\like_icon.png" />
+    <Content Include="bin\images\logo_40.png" />
+    <Content Include="bin\images\next_icon.png" />
+    <Content Include="bin\images\noti_icon.png" />
+    <Content Include="bin\images\noti_like_icon.png" />
+    <Content Include="bin\images\noti_photolisted_icon.png" />
+    <Content Include="bin\images\noti_photo_icon.png" />
+    <Content Include="bin\images\play_icon.png" />
+    <Content Include="bin\images\prev_icon.png" />
+    <Content Include="bin\images\report_icon.png" />
+    <Content Include="bin\images\rss.png" />
+    <Content Include="bin\images\smile_icon.png" />
+    <Content Include="bin\images\source_icon.png" />
+    <Content Include="bin\images\update.jpeg" />
+    <Content Include="bin\images\upload_icon.png" />
+    <Content Include="bin\images\view-256.png" />
+    <Content Include="bin\images\view_icon.png" />
+    <Content Include="bin\images\vote_icon.png" />
+    <Content Include="bin\images\vote_icon_small.png" />
     <Content Include="images\Comment_B-512.png" />
     <Content Include="images\comment_icon.png" />
     <Content Include="images\delete.jpeg" />
@@ -224,16 +247,8 @@
       <DependentUpon>camxuc.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CS.aspx.cs">
-      <DependentUpon>CS.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default2.aspx.cs">
-      <DependentUpon>Default2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DefaultPage.master.cs">
@@ -343,10 +358,15 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="aspnet_client\system_web\4_0_30319\" />
-    <Folder Include="images\admin\" />
-    <Folder Include="New folder\" />
+    <Folder Include="bin\images\admin\" />
     <Folder Include="Website\bin\" />
     <Folder Include="Website\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{958F8F16-0D7A-409F-8FE9-30FF0A91124D}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

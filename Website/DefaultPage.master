@@ -47,18 +47,15 @@
         </div>
         <div id="topUserContent">
             <div class="topUsers">
-                <asp:DataList ID="topDH" runat="server" RepeatColumns="2" RepeatDirection="Horizontal" RepeatLayout="Table">
-                    <ItemTemplate>
+              
                         <div class="item">
-                                <a href='<%#"photoupload.aspx?user="+Eval("idUser") %>'>
-                        <img src='<%#Eval("avatar") %>' />
+                                <a href='#'>
+                        <img src="avatar/08d57241-7.jpg" />
                         <div class="info">
-                            <span class="name"><%#Eval("tenHienThi").ToString().Trim() %></span> <span class="likes"><%#Eval("luotlike") %></span>
+                            <span class="name">được đấy</span> <span class="likes">10000</span>
                         </div>
                     </a>
                 </div>
-                    </ItemTemplate>
-                </asp:DataList>
                 
             </div>
             <div class="clear">

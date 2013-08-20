@@ -2,27 +2,31 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
   <div class="box photoDetails">
-        <asp:DataList ID="dtl" runat="server">
-            <ItemTemplate>
+
+//sau nay goi gag bang
+
+       <%-- <asp:DataList ID="dtl" runat="server">
+            <ItemTemplate>--%>
                 <div class="photoInfo">
                     <h1>
-                      <%#Eval("tieuDe") %>
+<%--                     <%= Gag. %>--%>
+                        Được đấy
                         </h1>
                     <div class="stats">
-                        <span class="views">Lượt xem: <span class="number"><%#Eval("luotXem") %></span></span> <span class="comments">
-                            Lượt bình luận: <span class="number"><asp:Label ID="Label2" runat="server" Text=""></asp:Label></span></span>
+                        <span class="views">Lượt xem: <span class="number">1000</span></span> <span class="comments">
+                            Lượt bình luận: <span class="number">1000</span></span>
                     </div>
                     <div class="source">
-                        <span class="source">Nguồn: <span class="text"><%#Eval("nguonPic") %></span></span>
+                        <span class="source">Nguồn: <span class="text">Duocday.com</span></span>
                     </div>
                 </div>
                 <div class="uploader">
-                    Đăng <asp:Label ID="Label1" runat="server" Text=""></asp:Label> trước bởi
+                    Đăng 10 phút trước bởi
                     <div>
-                        <img src="<%#Eval("avatar") %>" />
-                        <div class="info"><a href="photoupload.aspx?user=<%#Eval("idUser") %>">
-                             <%#Eval("tenHienThi") %>
-                        </a><span class="likes" title="lượt thích"> <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label> </span></div>
+                        <img src="avatar/3ff78193-5.jpg" />
+                        <div class="info"><a href="#">
+                             được đấy
+                        </a><span class="likes" title="lượt thích"> 10000 </span></div>
                         <%--<div class="info">
                             <span class="likes" title="lượt thích"><asp:Label ID="Label3" runat="server" Text="Label"></asp:Label></span>
                         </div>--%>
@@ -36,41 +40,29 @@
                 </div>
                 <div class="likeButton fixedScroll ">
                     <div class="text">
-                        "Giúp duocday duyệt ảnh:
+                        Thích ảnh này ?
                     </div>
-                    <div class="vote">
-                       <div class="voteDown">
-                <a class="voteButton first " data-id="597590" data-upvote="false" href="#"><span>chán</span></a>
-            </div>
-            <div class="voteUp">
-                <a class="voteButton " data-id="597590" data-upvote="true" href="#"><span>hay</span></a>
-            </div>
-                    </div>
-                <asp:Literal ID="Literal2" runat="server"></asp:Literal>
+                <div class="navButtons">
+             <a class="prev" href="#" > <<Ảnh trước</a> <a class="#">Ảnh sau>> </a></div>
                     <div class="fbLikeButton">
-                        <div class="fb-like" data-href="<%#"http://duocday.com/Detailvote.aspx?ID="+Eval("idPic") %>" data-send="false"
+                        <div class="fb-like" data-href="#" data-send="false"
                             data-show-faces="false" data-layout="button_count">
                         </div>
-                        <a name="fb_share" type="button_count" share_url="<%#"http://duocday.com/Detailvote.aspx?ID="+Eval("idPic") %>"
+                        <a name="fb_share" type="button_count" share_url="#"
                             href="http://www.facebook.com/sharer.php">Share</a>
                        
                     </div>
-                    <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-                   <%-- <div class="navButtons">
-                        <a class="prev" href="#" title="">Ảnh trước</a> <a class="next" href="#"
-                            title="">Ảnh sau</a>
-                    </div>--%>
                 </div>
                 <div class="clear">
                 </div> 
-                <asp:Panel runat="server" ID="image" Visible="false">
+                <asp:Panel runat="server" ID="image" Visible="true">
                 <div class="photoImg">
-                    <img class="thumbImg" alt="<%#Eval("tieuDe") %>" src='<%#Eval("url") %>'></img>
+                    <img class="thumbImg" alt="được đấy" src="anh/medium-d1d68c1f6d8a452894dac308f93f9039-400.jpg"></img>
                 </div>
                 </asp:Panel>
                 <asp:Panel runat="server" ID="video" Visible="false">
                     <div class="photoImg">
-                    <iframe width="650" height="365" src="<%#Eval("urlVideo") %>" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="650" height="365" src="#" frameborder="0" allowfullscreen></iframe>
                 </div>
                 </asp:Panel>
                 <div class="featuredFanPage">
@@ -83,12 +75,12 @@
                 <div class="commentContainer">
                     <h4>
                         Bình luận <a href="#" class="report">Báo cáo vi phạm</a></h4>
-                    <div class="fb-comments" data-href="<%#"http://duocday.com/Detailvote.aspx?ID="+Eval("idPic") %>" data-num-posts="10"
+                    <div class="fb-comments" data-href="#" data-num-posts="10"
                         data-width="655">
                     </div>
                 </div>
-            </ItemTemplate>
-        </asp:DataList>
+<%--            </ItemTemplate>
+        </asp:DataList>--%>
         <%--<div>
             <!-- haivl-trang-hinh-anh-duoi-anh -->
             <div id='div-gpt-ad-1346990951948-0' style='width: 655px; height: 150px; display: none;

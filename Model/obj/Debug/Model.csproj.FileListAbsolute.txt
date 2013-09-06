@@ -2,3 +2,4 @@ E:\Copy\Copy Uploads\Projects\duocday.com\Model\bin\Debug\Model.dll
 E:\Copy\Copy Uploads\Projects\duocday.com\Model\bin\Debug\Model.pdb
 E:\Copy\Copy Uploads\Projects\duocday.com\Model\obj\Debug\Model.dll
 E:\Copy\Copy Uploads\Projects\duocday.com\Model\obj\Debug\Model.pdb
+E:\Copy\Copy Uploads\Projects\duocday.com\Model\bin\Debug\SubSonic.Core.dll

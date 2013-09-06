@@ -1,5 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterUser.master" AutoEventWireup="true"
-    CodeFile="photoupload.aspx.cs" Inherits="photoupload" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterUser.master" AutoEventWireup="true" Inherits="photoupload" Codebehind="photoupload.aspx.cs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <div class="box">

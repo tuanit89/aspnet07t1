@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -13,6 +14,16 @@
     <RootNamespace>Website</RootNamespace>
     <AssemblyName>Website</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -122,11 +133,42 @@
     <Content Include="bin\FacebookAPI.dll" />
     <Content Include="bin\FacebookClient.dll" />
     <Content Include="camxuc.aspx" />
+    <Content Include="Content\duocday.css" />
+    <Content Include="Content\hmclip.css" />
+    <Content Include="Content\images\Comment_B-512.png" />
+    <Content Include="Content\images\comment_icon.png" />
+    <Content Include="Content\images\delete.jpeg" />
+    <Content Include="Content\images\down_icon.png" />
+    <Content Include="Content\images\fb-login-button.png" />
+    <Content Include="Content\images\icon_web.png" />
+    <Content Include="Content\images\like_icon.png" />
+    <Content Include="Content\images\logo_40.png" />
+    <Content Include="Content\images\next_icon.png" />
+    <Content Include="Content\images\noti_icon.png" />
+    <Content Include="Content\images\noti_like_icon.png" />
+    <Content Include="Content\images\noti_photolisted_icon.png" />
+    <Content Include="Content\images\noti_photo_icon.png" />
+    <Content Include="Content\images\play_icon.png" />
+    <Content Include="Content\images\prev_icon.png" />
+    <Content Include="Content\images\report_icon.png" />
+    <Content Include="Content\images\rss.png" />
+    <Content Include="Content\images\smile_icon.png" />
+    <Content Include="Content\images\source_icon.png" />
+    <Content Include="Content\images\update.jpeg" />
+    <Content Include="Content\images\upload_icon.png" />
+    <Content Include="Content\images\view-256.png" />
+    <Content Include="Content\images\view_icon.png" />
+    <Content Include="Content\images\vote_icon.png" />
+    <Content Include="Content\images\vote_icon_small.png" />
+    <Content Include="Content\styleLOGIN.css" />
+    <Content Include="Content\StyleSheet1.css" />
+    <Content Include="Controls\mainUI\header.ascx" />
     <Content Include="css\duocday.css" />
     <Content Include="css\hmclip.css" />
     <Content Include="css\styleLOGIN.css" />
     <Content Include="css\StyleSheet1.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Default0.aspx" />
     <Content Include="dep.aspx" />
     <Content Include="DetailDep.aspx" />
     <Content Include="DetailPhoto.aspx" />
@@ -236,13 +278,82 @@
       <DependentUpon>admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminPage.master.cs">
       <DependentUpon>AdminPage.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Content Include="App_Code\Connection.cs" />
-    <Content Include="App_Code\DataAccess.cs" />
-    <Content Include="App_Code\EmployeeWebService.cs" />
+    <Compile Include="AdminPage.master.designer.cs">
+      <DependentUpon>AdminPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="camxuc.aspx.designer.cs">
+      <DependentUpon>camxuc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\mainUI\header.ascx.cs">
+      <DependentUpon>header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\mainUI\header.ascx.designer.cs">
+      <DependentUpon>header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default0.aspx.cs">
+      <DependentUpon>Default0.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultPage.master.designer.cs">
+      <DependentUpon>DefaultPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="dep.aspx.designer.cs">
+      <DependentUpon>dep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailDep.aspx.designer.cs">
+      <DependentUpon>DetailDep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailPhoto.aspx.designer.cs">
+      <DependentUpon>DetailPhoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="detailvote.aspx.designer.cs">
+      <DependentUpon>detailvote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DuocDayMain.Master.cs">
+      <DependentUpon>DuocDayMain.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DuocDayMain.Master.designer.cs">
+      <DependentUpon>DuocDayMain.Master</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeWebService.cs">
+      <DependentUpon>MultipleUpdateWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Hot.master.designer.cs">
+      <DependentUpon>Hot.master</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginAdmin.aspx.designer.cs">
+      <DependentUpon>loginAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterUpload.master.designer.cs">
+      <DependentUpon>MasterUpload.master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterUser.master.designer.cs">
+      <DependentUpon>MasterUser.master</DependentUpon>
+    </Compile>
+    <Compile Include="messenger.aspx.designer.cs">
+      <DependentUpon>messenger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="old.aspx.designer.cs">
+      <DependentUpon>old.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Old_App_Code\Connection.cs" />
+    <Compile Include="Old_App_Code\DataAccess.cs" />
     <Compile Include="camxuc.aspx.cs">
       <DependentUpon>camxuc.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -303,35 +414,58 @@
       <DependentUpon>photoupload.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="photoupload.aspx.designer.cs">
+      <DependentUpon>photoupload.aspx</DependentUpon>
+    </Compile>
     <Compile Include="profile.aspx.cs">
       <DependentUpon>profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="profile.aspx.designer.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.master.cs">
       <DependentUpon>Site1.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.master.designer.cs">
+      <DependentUpon>Site1.master</DependentUpon>
     </Compile>
     <Compile Include="Thoat.aspx.cs">
       <DependentUpon>Thoat.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Thoat.aspx.designer.cs">
+      <DependentUpon>Thoat.aspx</DependentUpon>
+    </Compile>
     <Compile Include="timkiemnc.aspx.cs">
       <DependentUpon>timkiemnc.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="timkiemnc.aspx.designer.cs">
+      <DependentUpon>timkiemnc.aspx</DependentUpon>
     </Compile>
     <Compile Include="upload.aspx.cs">
       <DependentUpon>upload.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="upload.aspx.designer.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+    </Compile>
     <Compile Include="vote.aspx.cs">
       <DependentUpon>vote.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vote.aspx.designer.cs">
+      <DependentUpon>vote.aspx</DependentUpon>
     </Compile>
     <Compile Include="Website\Properties\AssemblyInfo.cs" />
     <Compile Include="xastress.aspx.cs">
       <DependentUpon>xastress.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xastress.aspx.designer.cs">
+      <DependentUpon>xastress.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -346,6 +480,7 @@
     <Content Include="Site1.master" />
     <None Include="dll\ASPSnippets.FaceBookAPI.dll.refresh" />
     <None Include="dll\FacebookAPI.dll.refresh" />
+    <Content Include="DuocDayMain.Master" />
     <None Include="Website\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="Website\Web.config" />
     <Content Include="Website\Web.Debug.config">
@@ -357,8 +492,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="aspnet_client\system_web\4_0_30319\" />
     <Folder Include="bin\images\admin\" />
+    <Folder Include="Content\images\admin\" />
+    <Folder Include="Properties\" />
     <Folder Include="Website\bin\" />
     <Folder Include="Website\obj\Debug\TempPE\" />
   </ItemGroup>
@@ -368,8 +504,13 @@
       <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ProjectExtensions>
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">

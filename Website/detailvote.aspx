@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Hot.master" AutoEventWireup="true" CodeFile="Detailvote.aspx.cs" Inherits="Detailvote" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Hot.master" AutoEventWireup="true" Inherits="Detailvote" Codebehind="Detailvote.aspx.cs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
   <div class="box photoDetails">

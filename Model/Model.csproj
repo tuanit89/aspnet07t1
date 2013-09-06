@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SubSonic.Core">
+      <HintPath>D:\MULTI PROJECTS\ASPX Projects\2013\VietAds\Website\bin\SubSonic.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -46,16 +49,9 @@
     <Compile Include="Config.cs" />
     <Compile Include="Constant.cs" />
     <Compile Include="ConvertUtility.cs" />
-    <Compile Include="DataAccess\GagCategorycsImpl.cs" />
-    <Compile Include="DataAccess\GagImpl.cs" />
     <Compile Include="DataHelper.cs" />
     <Compile Include="Encrypt\Encrypt.cs" />
     <Compile Include="Encrypt\RijndaelEnhanced.cs" />
-    <Compile Include="Entity\GagCategoryInfo.cs" />
-    <Compile Include="Entity\GagInfo.cs" />
-    <Compile Include="Entity\GagTypeInfo.cs" />
-    <Compile Include="Entity\RatingGagInfo.cs" />
-    <Compile Include="Entity\UserInfo.cs" />
     <Compile Include="Gzipper.cs" />
     <Compile Include="HtmlUtility.cs" />
     <Compile Include="MessageBox.cs" />
@@ -92,6 +88,7 @@
     <None Include="StringHelper\vssver2.scc" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="DataAccess\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="obj\Release\TempPE\" />
   </ItemGroup>

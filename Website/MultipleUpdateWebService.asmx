@@ -1,1 +1,1 @@
-﻿<%@ WebService Language="C#" CodeBehind="~/App_Code/EmployeeWebService.cs" Class="MultipleUpdateWebService" %>
+﻿<%@ WebService Language="C#" CodeBehind="EmployeeWebService.cs" Class="MultipleUpdateWebService" %>

@@ -1,2 +1,8 @@
 E:\Copy\Copy Uploads\Projects\duocday.com\Website\obj\Debug\Website.csprojResolveAssemblyReference.cache
 F:\duocday.com\Website\obj\Debug\ResolveAssemblyReference.cache
+E:\Copy\Copy Uploads\Projects\duocday.com\Website\obj\Debug\Website.dll
+E:\Copy\Copy Uploads\Projects\duocday.com\Website\obj\Debug\Website.pdb
+E:\Copy\Copy Uploads\Projects\duocday.com\Website\bin\Website.dll
+E:\Copy\Copy Uploads\Projects\duocday.com\Website\bin\Website.pdb
+E:\Copy\Copy Uploads\Projects\duocday.com\Website\bin\Model.dll
+E:\Copy\Copy Uploads\Projects\duocday.com\Website\bin\Model.pdb

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterUpload.master" AutoEventWireup="true" CodeFile="upload.aspx.cs" Inherits="uploadanh" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterUpload.master" AutoEventWireup="true" Inherits="uploadanh" Codebehind="upload.aspx.cs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 

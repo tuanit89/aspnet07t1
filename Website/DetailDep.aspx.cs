@@ -1,22 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Data;
-using Model.Entity;
 
 public partial class DetailDep : System.Web.UI.Page
 {
-    public GagInfo Gag;
+    //public GagInfo Gag;
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!Page.IsPostBack)
         {
             int id;
             int.TryParse(Request.QueryString["ID"], out id);
-            Gag = new Model.DataAccess.GagImpl().GetGag(id);
+            //Gag = new Model.DataAccess.GagImpl().GetGag(id);
 
             //long sau;
             //long truoc;

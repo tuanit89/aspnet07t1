@@ -14,7 +14,12 @@ $(document).ready(function() {
     duocday.Framework.registerMessageCloseButton();
     duocday.Framework.initHeadline(3500);
     duocday.Framework.fixWhenScroll();
+    
+    $(window).scroll(function () {
+        duocday.ListPhoto.fixInfoPanel();
+    });
 });
+
 var duocday = {};
 duocday.GA = {};
 var _gaq;
@@ -183,12 +188,15 @@ duocday.ListPhoto.fixInfoPanel = function() {
         var b = $(".info", this);
         if (a.offset().top - 60 < s && s < a.offset().top - 60 + a.outerHeight()) {
             if (s + b.outerHeight() < a.offset().top + a.outerHeight() - 70) {
+                console.log("AAA");
                 b.css({ position: "fixed", top: "60px" });
             } else {
                 b.css({ position: "relative", top: "" });
+                console.log("BBB");
             }
         } else {
             b.css({ position: "relative", top: "" });
+            console.log("CC");
         }
     });
 };

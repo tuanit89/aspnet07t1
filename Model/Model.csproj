@@ -52,6 +52,8 @@
     <Compile Include="DataHelper.cs" />
     <Compile Include="Encrypt\Encrypt.cs" />
     <Compile Include="Encrypt\RijndaelEnhanced.cs" />
+    <Compile Include="Entity\MemberProfile.cs" />
+    <Compile Include="Entity\Post.cs" />
     <Compile Include="Gzipper.cs" />
     <Compile Include="HtmlUtility.cs" />
     <Compile Include="MessageBox.cs" />

@@ -229,6 +229,7 @@
     <Content Include="images\view_icon.png" />
     <Content Include="images\vote_icon.png" />
     <Content Include="images\vote_icon_small.png" />
+    <Content Include="index.aspx" />
     <Content Include="index.htm" />
     <Content Include="login.aspx" />
     <Content Include="loginAdmin.aspx" />
@@ -262,7 +263,9 @@
     <Content Include="timkiemnc.aspx" />
     <Content Include="upload.aspx" />
     <Content Include="vote.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -334,11 +337,25 @@
     <Compile Include="Hot.master.designer.cs">
       <DependentUpon>Hot.master</DependentUpon>
     </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="loginAdmin.aspx.designer.cs">
       <DependentUpon>loginAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterBase.Master.cs">
+      <DependentUpon>MasterBase.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterBase.Master.designer.cs">
+      <DependentUpon>MasterBase.Master</DependentUpon>
     </Compile>
     <Compile Include="MasterUpload.master.designer.cs">
       <DependentUpon>MasterUpload.master</DependentUpon>
@@ -481,6 +498,7 @@
     <None Include="dll\ASPSnippets.FaceBookAPI.dll.refresh" />
     <None Include="dll\FacebookAPI.dll.refresh" />
     <Content Include="DuocDayMain.Master" />
+    <Content Include="MasterBase.Master" />
     <None Include="Website\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="Website\Web.config" />
     <Content Include="Website\Web.Debug.config">

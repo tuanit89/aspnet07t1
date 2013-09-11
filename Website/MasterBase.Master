@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterBase.master.cs" Inherits="Website.MasterBase" %>
+
+<%@ Register TagPrefix="usc" TagName="header" Src="~/Controls/mainUI/header.ascx" %>
+
+<!DOCTYPE html >
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+<head runat="server">
+    <title>Được đấy | Truyện vui | Ảnh chế | Clip hài</title>
+    <script src="/Scripts/jquery-1.6.2.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/Content/duocday.css" />
+    <script src="/Scripts/duocday.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.cookie.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+<body>
+    <div id="content">
+        <div id="mainContainer" class="clearfix">
+            <usc:header runat="server" />
+
+            <div id="leftColumn">
+                <!--site left-->
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <!--end site left-->
+                <div id="footer">
+                    <%--<ul class="left">
+                        <li>© 2013 <a href="#" target="_blank">Appvl</a></li>
+                    </ul>--%>
+                    <ul class="right">
+                        <li><a href="/lien-he.htm">Liên hệ</a> </li>
+                        <li>·<a href="/gioi-thieu.htm">Giới thiệu</a> </li>
+                        <li>·<a href="/faq.htm">FAQ</a> </li>
+                        <li>·<a href="/dieu-khoan.htm">Điều khoản</a> </li>
+                        <li>·<a href="/cach-vao-face-bôk">Cách vào Facebook</a> </li>
+                        <li>·<a href="rss.xml" target="_blank">RSS</a> </li>
+                        <li>·<a href=" http://www.facebook.com/duocdaydotcom" target="_blank">Facebook</a>
+                        </li>
+                    </ul>
+                    <div class="clear">
+                    </div>
+                </div>
+            </div>
+            <div id="rightColumn" class="clearfix">
+                <div class="box infoBox highlightBox">
+                    <strong>Vào Facebook để lướt duocday sướng hơn! <a href="#">Xem cách vào facebook không bị chặn.</a></strong>
+                </div>
+
+                <a class="buttons spaceBottom btnStartToShare" href="/upload">Click để bắt đầu chia sẻ những bức ảnh vui!</a><!--end button starting to share-->
+
+                <div class="box darkBox">
+                    <h3 class="topUsers">Top danh hài</h3>
+                    <ul class="topUsersSort topUsersSortHome">
+                        <li><a href="#" data-sort="week" class="selected">tuần</a> / </li>
+                        <li><a href="#" data-sort="month">tháng</a> / </li>
+                        <li><a href="#" data-sort="all">tất cả</a> </li>
+                    </ul>
+                    <div class="clear">
+                    </div>
+                    <div id="topUserContent">
+                        <div class="topUsers">
+
+                            <div class="item">
+                                <a href='#'>
+                                    <img src="avatar/08d57241-7.jpg" />
+                                    <div class="info">
+                                        <span class="name">được đấy</span> <span class="likes">10000</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="clear">
+                        </div>
+                        <div class="moreTop">
+                            <%-- <a href="/top-user/week">xem th&#234;m &#187;</a>--%>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fixedScrollDetector"></div>
+                <div class="box darkBox socialBox">
+                    <h3>Ủng hộ duocday.com nhé bạn ^^</h3>
+                    <div class="media facebook">
+                        <div class="fb-like" data-href=" http://www.facebook.com/duocdaydotcom" data-send="false" data-width="270" data-show-faces="false"></div>
+                    </div>
+                    <div class="media twitter">
+                        <a href="https://twitter.com/tuanit89" class="twitter-follow-button" data-show-count="true" data-size="large">Follow duocday</a>
+                    </div>
+                    <div class="media google" style="border-bottom: none">
+                        <div class="g-plusone" data-href="http://www.duocday.com/" data-size="medium"></div>
+                        <p>DuocDay trên Google+</p>
+                    </div>
+                </div>    
+                <div class="fixedScroll">
+                    <div style="float: left; width: 300px; height: 400px;color: blanchedalmond"></div>
+                    <!-- haivl-trang-chu-bottom-small -->
+                </div>
+                <!--aaa-->
+            </div>
+        </div>
+    </div>
+
+    <!--FB Loader-->
+    <script type="text/javascript">
+        duocday.Facebook.init('230354607115052');
+        
+        //Gplus
+        (function () {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+        
+        //Twitter
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");
+    </script>
+</body>
+</html>

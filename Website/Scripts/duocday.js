@@ -44,7 +44,7 @@ duocday.Facebook.init = function(c) {
         if (d.getElementById(a)) return;
         b = d.createElement(s);
         b.id = a;
-        b.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=" + c;
+        b.src = "//connect.facebook.net/en_US/all/debug.js#xfbml=1&appId=" + c;
         fjs.parentNode.insertBefore(b, fjs);
     }(document, 'script', 'facebook-jssdk'));
 };

@@ -291,6 +291,9 @@
     <Compile Include="AdminPage.master.designer.cs">
       <DependentUpon>AdminPage.master</DependentUpon>
     </Compile>
+    <Compile Include="API\Login.ashx.cs">
+      <DependentUpon>Login.ashx</DependentUpon>
+    </Compile>
     <Compile Include="camxuc.aspx.designer.cs">
       <DependentUpon>camxuc.aspx</DependentUpon>
     </Compile>
@@ -488,6 +491,7 @@
   <ItemGroup>
     <None Include=".hgignore" />
     <Content Include="AdminPage.master" />
+    <Content Include="API\Login.ashx" />
     <None Include="bin\ASPSnippets.FaceBookAPI.dll.refresh" />
     <None Include="bin\FacebookAPI.dll.refresh" />
     <Content Include="DefaultPage.master" />
@@ -512,6 +516,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="bin\images\admin\" />
     <Folder Include="Content\images\admin\" />
+    <Folder Include="Content\images\icons\" />
     <Folder Include="Properties\" />
     <Folder Include="Website\bin\" />
     <Folder Include="Website\obj\Debug\TempPE\" />

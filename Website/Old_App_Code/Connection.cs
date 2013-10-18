@@ -23,7 +23,7 @@ public class Connection
 	}
     public static SqlConnection GetConnection()
     {
-        string str = ConfigurationManager.ConnectionStrings["duocday.com"].ConnectionString;
+        string str = ConfigurationManager.ConnectionStrings["strDuocDay"].ConnectionString;
         SqlConnection cn = new SqlConnection(str);
         if (cn.State == ConnectionState.Open)
         {

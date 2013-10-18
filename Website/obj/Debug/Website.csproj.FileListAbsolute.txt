@@ -6,3 +6,6 @@ E:\Copy\Copy Uploads\Projects\duocday.com\Website\bin\Website.dll
 E:\Copy\Copy Uploads\Projects\duocday.com\Website\bin\Website.pdb
 E:\Copy\Copy Uploads\Projects\duocday.com\Website\bin\Model.dll
 E:\Copy\Copy Uploads\Projects\duocday.com\Website\bin\Model.pdb
+E:\Copy\Copy Uploads\Projects\duocday.com\Website\bin\Facebook.dll
+E:\Copy\Copy Uploads\Projects\duocday.com\Website\bin\Facebook.pdb
+E:\Copy\Copy Uploads\Projects\duocday.com\Website\bin\Facebook.xml

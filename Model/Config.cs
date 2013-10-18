@@ -154,6 +154,9 @@ namespace Models
             get { return ConfigurationManager.AppSettings["SiteRoot"]; }
         }
 
+        public static readonly string AppID = ConfigurationManager.AppSettings["appId"];
+        public static readonly string AppSecret = ConfigurationManager.AppSettings["appSecret"];
+
         public static List<int> CateShowHome()
         {
             var str = ConfigurationManager.AppSettings["HomeShow"].Split(',');

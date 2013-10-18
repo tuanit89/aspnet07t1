@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web.UI.WebControls;
 
 namespace Model.Entity
 {
@@ -7,13 +8,13 @@ namespace Model.Entity
     {
         public int Id { get; set; }
         public string FacebookID { get; set; }
-        public string Username { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
         public string Fullname { get; set; }
         public bool Gender { get; set; }
         public string Description { get; set; }
         public string Country { get; set; }
+        public DateTime JoinedDate { get; set; }
         public DateTime LastLogin { get; set; }
         public bool Verified { get; set; }
         public bool Status { get; set; }

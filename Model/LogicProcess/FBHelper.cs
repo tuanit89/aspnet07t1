@@ -34,8 +34,7 @@ namespace Model.LogicProcess
                 user.Verified = false;
                 user.Country = me.location.name;
                 user.Description = me.bio;
-                user.Website = me.link;
-
+                user.JoinedDate = DateTime.Now;
                 user = UserImpl.Impl.FacebookRegister(user);
                 if (user == null)
                 {

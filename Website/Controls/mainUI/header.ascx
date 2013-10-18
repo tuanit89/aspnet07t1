@@ -12,6 +12,7 @@
             <li><a href="/tim-kiem-nang-cao.aspx" target="_blank">Tìm kiếm nâng cao</a></li>
         </ul>
         <div id="loginPanel">
+            <a class="loginButton" href="login.aspx">Đăng nhập</a>
         </div>
         <div id="upanh">
             <a class="upload" href="upload.aspx">Đăng ảnh</a>

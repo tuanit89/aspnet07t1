@@ -9,3 +9,4 @@ E:\Copy\Copy Uploads\Projects\duocday.com\Website\bin\Model.pdb
 E:\Copy\Copy Uploads\Projects\duocday.com\Website\bin\Facebook.dll
 E:\Copy\Copy Uploads\Projects\duocday.com\Website\bin\Facebook.pdb
 E:\Copy\Copy Uploads\Projects\duocday.com\Website\bin\Facebook.xml
+E:\Copy\Copy Uploads\Projects\duocday.com\Website\bin\UrlRewritingNet.UrlRewriter.dll

@@ -22,7 +22,7 @@ namespace Model.LogicProcess
             dynamic me = _fb.Get("me");
             //Check Login
             User user = UserImpl.Impl.FacebookLogin(me.email);
-            if (user == null) //Register for this email
+            if (user.ErrorStatus == User.EStatusError.NotFound) //Register for this email
             {
                 user = new User();
                 user.FacebookID = me.id;
@@ -36,7 +36,7 @@ namespace Model.LogicProcess
                 user.Description = me.bio;
                 user.JoinedDate = DateTime.Now;
                 user = UserImpl.Impl.FacebookRegister(user);
-                if (user == null)
+                if (user.ErrorStatus == User.EStatusError.ExistEmail)
                 {
                     throw new Exception("Email này đã tồn tại, xin vui lòng sử dụng email khác");
                 }

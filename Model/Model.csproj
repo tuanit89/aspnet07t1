@@ -58,6 +58,7 @@
     <Compile Include="Encrypt\RijndaelEnhanced.cs" />
     <Compile Include="Entity\User.cs" />
     <Compile Include="Entity\Post.cs" />
+    <Compile Include="Entity\UserNotification.cs" />
     <Compile Include="Gzipper.cs" />
     <Compile Include="HtmlUtility.cs" />
     <Compile Include="LogicProcess\FBHelper.cs" />

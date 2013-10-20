@@ -1,5 +1,5 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/Site1.master" AutoEventWireup="true"
-    Inherits="MasterUser" Codebehind="MasterUser.master.cs" %>
+    Inherits="MasterUser" CodeBehind="MasterUser.master.cs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -16,8 +16,7 @@
                 <div class="avatar">
                     <img src="avatar/3ff78193-5.jpg" alt="được đấy" />
                     <div class="name">
-                        <h2>
-                            được đấy</h2>
+                        <h2>được đấy</h2>
                         <span>Tham gia từ: 14/08/2013</span>
                     </div>
                 </div>
@@ -25,19 +24,25 @@
                 </div>
                 <div class="stats">
                     <div>
-                        Số ảnh đã đăng: <span class="number">100000</span></div>
+                        Số ảnh đã đăng: <span class="number">100000</span>
+                    </div>
                     <div>
-                        Được like: <span class="number">100000</span> lần</div>
+                        Được like: <span class="number">100000</span> lần
+                    </div>
                     <div>
-                        Được bình luận: <span class="number">100000</span> lần</div>
+                        Được bình luận: <span class="number">100000</span> lần
+                    </div>
                     <div>
-                        Được xem: <span class="number">100000</span> lần</div>
+                        Được xem: <span class="number">100000</span> lần
+                    </div>
                     <div>
-                        Thứ hạng: <span class="number">1</span></div>
+                        Thứ hạng: <span class="number">1</span>
+                    </div>
                     <div>
-                        Facebook: <a rel="nofollow" target="_blank" href="#">được đấy</a></div>
+                        Facebook: <a rel="nofollow" target="_blank" href="#">được đấy</a>
+                    </div>
                     <div class="websites">
-<%--                        <div id="wscaption">
+                        <%--                        <div id="wscaption">
                             <div id="wslist">
                                 <ul>
                                     <li><a rel="nofollow" target="_blank" href="duocday.com">được đấy</a></li>

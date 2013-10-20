@@ -11,7 +11,7 @@ namespace tuanva.Core
         internal const string LIC_LOGISTICS_CONNECTION_STRING = "sunlawConnectionString";
 
         //Session name
-        public const string SessionNameAccountAdmin = "AccountAdmin";
+        public const string Session_Member_Account = "D2_MemberAccount";
 
         public const string QueryLanguages = "QUERY_LANG";
 

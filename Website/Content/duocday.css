@@ -1167,7 +1167,6 @@ ul.guidelines li {
    width:55px;
 }
 .userInfo #wslist {
-   float:right;
    width:205px;
 }
 .userInfo .actionLinks {
@@ -1342,3 +1341,173 @@ top: 6px;
 position: absolute;
 text-shadow: none;
 color: #333;}
+
+#headerRight {
+float: right;
+margin-top: 6px;
+}
+#headerRight .searchButton, #headerRight .notiButton {
+    background: url(../images/search_icon.png) no-repeat;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    float: left;
+}
+#headerRight .searchButton:hover {
+    background: url(../images/search_icon.png?v=1) no-repeat 0 -30px;
+}
+#headerRight .notiButton {
+    background: url(images/icons/message_icon.png?v=1) no-repeat;
+    text-align: right;
+    width: 35px;
+    margin-left: 5px;
+}
+#headerRight .notiButton:hover {
+    background: url(images/icons/message_icon.png?v=1) no-repeat 0 -30px;
+}
+#headerRight .notiCount {
+    width: inherit;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    background-color: red;
+    padding: 0 2px;
+    line-height: 12px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    top: -2px;
+}
+#headerRight .avatar {
+    float: left;
+    position: relative;
+    margin-left: 15px;
+}
+#headerRight .avatar .blank {
+    width: 130px;
+    position: absolute;
+    height: 15px;
+    right: 0;
+    top: 20px;
+    display: none;
+}
+#headerRight .avatar img {
+}
+#headerRight .avatarLink {
+    display: inline-block
+}
+#headerRight ul {
+    background-color: black;
+    border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    position: absolute;
+    padding: 5px 0;
+    display: none;
+    z-index: 1000;
+    right: 0;
+}
+#headerRight .avatar:hover .blank {
+    display: block;
+    cursor: pointer;   
+}
+#headerRight .avatar:hover ul {
+	display: block;
+	cursor: pointer;
+}
+#headerRight ul a {
+    display: block;
+    padding: 5px 10px;
+    color: #999;
+    -webkit-transition: none;
+    -moz-transition: none;
+}
+#headerRight ul a:hover {
+    color: white;
+    background-color: #646464;
+}
+#headerRight ul, #headerRight span {
+    width: 130px;
+}
+#headerRight span {
+    font-size: 11px;
+    padding-left: 30px;
+}
+#headerRight .noNoti {
+    margin-left: 7px;
+}
+#headerRight .login {
+    float: left;
+    margin-top: 2px;
+}
+#headerRight .login a {
+    color: #EDEDED;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: bold;
+    background-color: #444;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    text-shadow: 0 -1px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, .2) inset;
+    -moz-box-shadow: 0 0 0 1px rgba(255, 255, 255, .2) inset;
+    -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, .2) inset;
+    border: 1px solid black;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+    display: block;
+    -webkit-transition: background-color .2s linear;
+    -moz-transition: background-color .2s linear;
+}
+
+#headerRight .login a:hover {
+    background-color: #555;
+    color: white
+}
+
+#loginPanel {
+    float: right;
+}
+#loginPanel .loginButton, #loginPanel .profileButton {
+    color: #EDEDED;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: bold;
+    background-color: #444;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    text-shadow: 0 -1px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, .2) inset;
+    -moz-box-shadow: 0 0 0 1px rgba(255, 255, 255, .2) inset;
+    -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, .2) inset;
+    border: 1px solid black;
+    max-width: 194px;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+ 
+ #loginPanel .loginButton, #loginPanel .profileButton {
+    width: 140px; 
+    display: block;     
+    margin: 8px 0 0;
+}   
+
+#loginPanel .loginButton {
+    -webkit-transition: background-color .2s linear;
+    -moz-transition: background-color .2s linear;
+}
+#loginPanel .loginButton:hover {
+    background-color: #555;
+    color: white
+}
+#loginPanel .loginButton:active{
+}
+#loginPanel .profileButton {
+    min-width: 140px;
+    background: #444 url(../images/down_icon.png) no-repeat center right;
+}

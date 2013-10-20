@@ -43,14 +43,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ASPSnippets.FaceBookAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\ASPSnippets.FaceBookAPI.dll</HintPath>
-    </Reference>
-    <Reference Include="FacebookAPI, Version=1.0.4332.19837, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>dll\FacebookAPI.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -67,6 +59,10 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="UrlRewritingNet.UrlRewriter, Version=1.1.60329.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\MULTI PROJECTS\ASPX Projects\Du An Lic\SunLaw\Website\bin\UrlRewritingNet.UrlRewriter.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin.aspx" />
@@ -163,6 +159,8 @@
     <Content Include="Content\styleLOGIN.css" />
     <Content Include="Content\StyleSheet1.css" />
     <Content Include="Controls\mainUI\header.ascx" />
+    <Content Include="Controls\mainUI\rightPlaceHolder.ascx" />
+    <Content Include="Controls\mainUI\UserPlaceHolder.ascx" />
     <Content Include="css\duocday.css" />
     <Content Include="css\hmclip.css" />
     <Content Include="css\styleLOGIN.css" />
@@ -233,7 +231,7 @@
     <Content Include="index.htm" />
     <Content Include="login.aspx" />
     <Content Include="loginAdmin.aspx" />
-    <Content Include="messenger.aspx" />
+    <Content Include="Notification.aspx" />
     <Content Include="MultipleUpdateWebService.asmx" />
     <Content Include="old.aspx" />
     <Content Include="photoupload.aspx" />
@@ -259,7 +257,7 @@
     <Content Include="Scripts\plusone.js" />
     <Content Include="Scripts\widgets.js" />
     <Content Include="Styles\Site.css" />
-    <Content Include="Thoat.aspx" />
+    <Content Include="LogOut.aspx" />
     <Content Include="timkiemnc.aspx" />
     <Content Include="upload.aspx" />
     <Content Include="vote.aspx" />
@@ -303,6 +301,20 @@
     </Compile>
     <Compile Include="Controls\mainUI\header.ascx.designer.cs">
       <DependentUpon>header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\mainUI\rightPlaceHolder.ascx.cs">
+      <DependentUpon>rightPlaceHolder.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\mainUI\rightPlaceHolder.ascx.designer.cs">
+      <DependentUpon>rightPlaceHolder.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\mainUI\UserPlaceHolder.ascx.cs">
+      <DependentUpon>UserPlaceHolder.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\mainUI\UserPlaceHolder.ascx.designer.cs">
+      <DependentUpon>UserPlaceHolder.ascx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -366,8 +378,8 @@
     <Compile Include="MasterUser.master.designer.cs">
       <DependentUpon>MasterUser.master</DependentUpon>
     </Compile>
-    <Compile Include="messenger.aspx.designer.cs">
-      <DependentUpon>messenger.aspx</DependentUpon>
+    <Compile Include="Notification.aspx.designer.cs">
+      <DependentUpon>Notification.aspx</DependentUpon>
     </Compile>
     <Compile Include="old.aspx.designer.cs">
       <DependentUpon>old.aspx</DependentUpon>
@@ -422,8 +434,8 @@
       <DependentUpon>MasterUser.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="messenger.aspx.cs">
-      <DependentUpon>messenger.aspx</DependentUpon>
+    <Compile Include="Notification.aspx.cs">
+      <DependentUpon>Notification.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="old.aspx.cs">
@@ -451,12 +463,12 @@
     <Compile Include="Site1.master.designer.cs">
       <DependentUpon>Site1.master</DependentUpon>
     </Compile>
-    <Compile Include="Thoat.aspx.cs">
-      <DependentUpon>Thoat.aspx</DependentUpon>
+    <Compile Include="LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Thoat.aspx.designer.cs">
-      <DependentUpon>Thoat.aspx</DependentUpon>
+    <Compile Include="LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
     </Compile>
     <Compile Include="timkiemnc.aspx.cs">
       <DependentUpon>timkiemnc.aspx</DependentUpon>

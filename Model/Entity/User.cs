@@ -6,6 +6,14 @@ namespace Model.Entity
     [Serializable]
     public class User
     {
+        public enum EStatusError
+        {
+            ExistEmail,
+            Banned,
+            NotActive,
+            Normal,
+            NotFound
+        }
         public int Id { get; set; }
         public string FacebookID { get; set; }
         public string Password { get; set; }
@@ -24,5 +32,13 @@ namespace Model.Entity
         public string ProfilePicture { get; set; }
         public bool RememberMe { get; set; }
         public bool RememberIp { get; set; }
+        public EStatusError ErrorStatus { get; set; }
+
+        //Extend properties
+        public int TotalUpload { get; set; }
+        public int TotalLike { get; set; }
+        public int TotalComment { get; set; }
+        public int TotalView { get; set; }
+        public int Rank { get; set; }
     }
 }

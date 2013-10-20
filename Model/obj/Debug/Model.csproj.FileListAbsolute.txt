@@ -3,7 +3,7 @@ E:\Copy\Copy Uploads\Projects\duocday.com\Model\bin\Debug\Model.pdb
 E:\Copy\Copy Uploads\Projects\duocday.com\Model\obj\Debug\Model.dll
 E:\Copy\Copy Uploads\Projects\duocday.com\Model\obj\Debug\Model.pdb
 E:\Copy\Copy Uploads\Projects\duocday.com\Model\bin\Debug\SubSonic.Core.dll
-E:\Copy\Copy Uploads\Projects\duocday.com\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 E:\Copy\Copy Uploads\Projects\duocday.com\Model\bin\Debug\Facebook.dll
 E:\Copy\Copy Uploads\Projects\duocday.com\Model\bin\Debug\Facebook.pdb
 E:\Copy\Copy Uploads\Projects\duocday.com\Model\bin\Debug\Facebook.xml
+E:\Copy\Copy Uploads\Projects\duocday.com\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

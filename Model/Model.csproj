@@ -52,6 +52,7 @@
     <Compile Include="Config.cs" />
     <Compile Include="Constant.cs" />
     <Compile Include="ConvertUtility.cs" />
+    <Compile Include="DataAccess\NotificationImpl.cs" />
     <Compile Include="DataAccess\UserImpl.cs" />
     <Compile Include="DataHelper.cs" />
     <Compile Include="Encrypt\Encrypt.cs" />

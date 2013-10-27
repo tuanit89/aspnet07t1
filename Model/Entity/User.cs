@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Web.UI.WebControls;
+using Model.DataAccess;
 
 namespace Model.Entity
 {
@@ -40,5 +41,11 @@ namespace Model.Entity
         public int TotalComment { get; set; }
         public int TotalView { get; set; }
         public int Rank { get; set; }
+
+        //
+        public int NotificationUnread
+        {
+            get { NotificationImpl.Impl.UserNotificationUnread(this.Id); }
+        }
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterBase.master" AutoEventWireup="true" Inherits="Notification" CodeBehind="Notification.aspx.cs" %>
+﻿<%@ Page Title="Thông báo của bạn" Language="C#" MasterPageFile="~/MasterBase.master" AutoEventWireup="true" Inherits="Notification" CodeBehind="Notification.aspx.cs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="box minHeightBox notifications">

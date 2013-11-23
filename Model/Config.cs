@@ -12,9 +12,9 @@ namespace Models
         {
             get
             {
-                //if(string.IsNullOrEmpty(_connectionString)) _connectionString= Encrypt.Encrypt.DecryptConn(ConfigurationManager.AppSettings["conStr"]);
-                //return _connectionString;
-                return @"Server=.;Database=duocday;Trusted_Connection=True;";
+                if(string.IsNullOrEmpty(_connectionString)) _connectionString= Encrypt.Encrypt.DecryptConn(ConfigurationManager.AppSettings["conStr"]);
+                return _connectionString;
+                //return @"Server=.;Database=duocday;Trusted_Connection=True;";
                 //return @"Server=.;Database=trathainguyen;Trusted_Connection=True;";
             }
         }
